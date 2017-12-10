@@ -108,6 +108,16 @@ class App {
       accord: $(this).find('[name="accord"]').val(),
       text: $(this).find('[name="text"]').val()
     };
+
+    if (!data.name.length ||
+        !data.creator.length ||
+        !data.genres.length ||
+        !data.song.length ||
+        !data.accord.length ||
+        !data.text.length
+    ) {
+      return app.notif('danger', 'Обязательно!', 'Заполнены не все поля.');
+    }
     ipcRenderer.send('add-song', data);
     return false;
   }

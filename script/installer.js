@@ -19,12 +19,12 @@ function getInstallerConfig () {
   return Promise.resolve({
     appDirectory: path.join(outPath, 'ukulele-world-win32-ia32'),
     exe: 'ukulele-world.exe',
-    iconUrl: 'https://raw.githubusercontent.com/electron/electron-api-demos/master/assets/app-icon/win/app.ico',
+    iconUrl: path.join(rootPath, 'images', 'favicon.ico'),
     loadingGif: path.join(rootPath, 'images', 'loading.gif'),
     noMsi: true,
     outputDirectory: path.join(outPath, 'windows-installer'),
     setupExe: 'exe_ukulele-world.exe',
-    setupIcon: path.join(rootPath, 'images', 'app.ico'),
+    setupIcon: path.join(rootPath, 'images', 'favicon.ico'),
     skipUpdateIcon: true
   })
 }

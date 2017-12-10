@@ -58,6 +58,9 @@ class Application {
         slashes: true
       }));
     });
+    app.on('window-all-closed', () => {
+      app.quit();
+    });
     // слушатель добавления песен
     ipcMain.on('add-song', (event, newSongData) => {
       // проверяем верный ли пришол аудио файл и поддерживаем ли мы его
