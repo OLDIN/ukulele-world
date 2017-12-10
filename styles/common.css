@@ -1,0 +1,121 @@
+.index__container {
+  background: url(../images/postcard.jpg) top/cover no-repeat;
+  background-color:#f8cba4;
+  position: relative;
+  height: 100vh;
+}
+
+.index__links {
+  position: absolute;
+  bottom: 100px;
+  right: 150px;
+}
+
+.index__begin {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 310px;
+  text-align: center;
+  background: #f26e47;
+  color: #fff !important;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.3em;
+  border: 2px dashed #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 0 4px #f26e47, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+  text-shadow: -1px -1px #aa3030;
+  font-weight: normal;
+}
+
+.index__begin:last-child {
+  margin-bottom: 0;
+}
+
+a:active{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: none;
+  color:#ff0030 !important;
+  cursor: pointer;
+}
+
+a:focus{
+  text-decoration: none;
+}
+
+.btn{
+  background: #f26e47;
+  border-color: white;
+}
+
+.me{
+  border:5px solid #f26e47;
+}
+
+.modal-content{
+  border:5px solid #f26e47;
+}
+
+.custom-file {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  height: calc(2.25rem + 2px);
+  margin-bottom: 0;
+}
+
+.custom-file-input {
+  min-width: 14rem;
+  max-width: 100%;
+  height: calc(2.25rem + 2px);
+  margin: 0;
+  opacity: 0;
+}
+
+.custom-file-control {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  line-height: 1.5;
+  color: #495057;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+.custom-file-control:lang(en)::before {
+  content: "Выбрать";
+}
+
+.custom-file-control::before {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  z-index: 6;
+  display: block;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 0 .25rem .25rem 0;
+}
+
+.custom-file-control:lang(en):empty::after {
+  content: attr(data-text);
+}
